@@ -7,7 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.example.gmail.R
 
-class EmailAdapter(private val context: Context, private val emails: List<Email>) : BaseAdapter() {
+class GmailAdapter(private val context: Context, private val emails: List<Gmail>) : BaseAdapter() {
 
     override fun getCount(): Int {
         return emails.size
@@ -22,7 +22,7 @@ class EmailAdapter(private val context: Context, private val emails: List<Email>
     }
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
-        val email = getItem(position) as Email
+        val email = getItem(position) as Gmail
         val view: View
         val viewHolder: ViewHolder
 

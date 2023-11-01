@@ -11,14 +11,14 @@
         android:id="@+id/navBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/orange"
         android:layout_weight="1"
+        android:background="#E44848"
         android:orientation="horizontal"
-        app:layout_constraintTop_toTopOf="parent"
+        android:padding="16dp"
         app:layout_constraintBottom_toTopOf="@id/emailLayout"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:padding="16dp">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <!-- Thêm các nút hoặc phần tử khác vào Navigation Bar ở đây -->
         <ImageView
@@ -31,15 +31,15 @@
 
 
         <TextView
-            android:layout_weight="1"
-            android:layout_marginLeft="20dp"
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
             android:text="Inbox"
             android:textColor="@color/white"
-            android:textSize="28sp"
-            android:layout_marginTop="4dp" />
+            android:textSize="28sp" />
 
         <ImageView
             android:id="@+id/iconSearch"
@@ -75,10 +75,11 @@
         android:layout_height="64dp"
         android:layout_marginRight="25dp"
         android:layout_marginBottom="25dp"
-        android:src="@drawable/icon_edit"
-        app:civ_border_color="#FFFFFF"
+        android:background="#F42D2D"
+        android:src="@android:drawable/ic_menu_edit"
+        app:civ_border_color="#F42D2D"
         app:civ_border_width="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
